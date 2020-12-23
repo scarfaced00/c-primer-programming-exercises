@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <float.h> //to get max, and min value of float
+#include <limits.h> //to get max value of int
+
+int main () {
+    int max_int=INT_MAX;
+    float max_float=FLT_MAX;
+    float min_float=FLT_MIN;
+    
+    int i_overflow=INT_MAX+1;
+    float f_overflow=FLT_MAX*2;
+    float f_underflow=FLT_MIN/2;
+    
+    printf("max int : %d\n+1=%d\n\n",max_int,i_overflow);
+    printf("max float : %f\n*2=%f\n\n",max_float, f_overflow);
+    printf("min float : %f\n/2=%f\n\n",min_float, f_underflow);
+
+   return 0;
+}
